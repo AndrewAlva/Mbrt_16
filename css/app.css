@@ -7,6 +7,17 @@
     position: absolute;
     width: 100%;
     height: 100%; }
+    #fullWrapper #mbrtWrapper .innerYieldSections {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding-left: 204px;
+      padding-right: 204px;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 400;
+      -webkit-font-smoothing: antialiased !important;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 .barNavs {
   position: absolute;
@@ -94,12 +105,13 @@
     height: 100%; }
     #rightNav .mbrtFoot .mbrtSlogan {
       position: absolute;
-      width: 149px;
+      width: 135px;
       height: 26px;
       margin: auto;
       left: 0;
       right: 0;
       border-right: 2px solid #9a999e;
+      font-size: 13.4pt;
       color: #06111a;
       font-family: serif;
       font-style: italic;
@@ -107,11 +119,11 @@
       padding-right: 9px;
       -webkit-transform-origin: center;
       transform-origin: center;
-      -webkit-transform: rotate(-90deg) translate(-162px, 0);
-      -moz-transform: rotate(-90deg) translate(-162px, 0);
-      -ms-transform: rotate(-90deg) translate(-162px, 0);
-      -o-transform: rotate(-90deg) translate(-162px, 0);
-      transform: rotate(-90deg) translate(-162px, 0); }
+      -webkit-transform: rotate(-90deg) translate(-155px, 0);
+      -moz-transform: rotate(-90deg) translate(-155px, 0);
+      -ms-transform: rotate(-90deg) translate(-155px, 0);
+      -o-transform: rotate(-90deg) translate(-155px, 0);
+      transform: rotate(-90deg) translate(-155px, 0); }
       #rightNav .mbrtFoot .mbrtSlogan p {
         margin: 0;
         line-height: 26px; }
@@ -136,83 +148,96 @@
           filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
           -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
 
-#indexWrapper {
+#menuWrapper {
   position: absolute;
   width: 100%;
   height: 100%;
-  padding-left: 204px;
-  padding-right: 204px;
-  box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 400;
-  -webkit-font-smoothing: antialiased !important;
-  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
-  #indexWrapper canvas {
+  z-index: 100000; }
+  #menuWrapper #menuBG {
     position: absolute;
+    z-index: -1;
     width: 100%;
     height: 100%;
+    background-color: #fff;
+    opacity: 0.9;
+    filter: alpha(opacity=90);
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=($val * 100));
+    -ms-filter: 'progid:DXImageTransform.Microsoft.Alpha(($val * 100))'; }
+  #menuWrapper #menuSections {
+    position: absolute;
+    width: 526px;
+    height: 238px;
+    margin: auto;
     left: 0;
-    z-index: -1; }
-  #indexWrapper .centeredText {
-    position: relative;
-    width: 492px;
+    right: 0; }
+
+#indexWrapper canvas {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  z-index: -1; }
+#indexWrapper .centeredText {
+  position: relative;
+  width: 492px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  padding-left: 23px;
+  box-sizing: border-box; }
+  #indexWrapper .centeredText h1 {
+    color: #06111a;
+    font-size: 31pt;
+    line-height: 35pt;
+    margin: 0; }
+  #indexWrapper .centeredText p {
+    color: #9a999e;
+    font-size: 14pt;
+    line-height: 14.5pt;
+    margin: 0;
+    margin-top: 25px; }
+#indexWrapper #top-intro {
+  margin-top: 12vh;
+  margin-bottom: 23vh;
+  border-left: 1px solid #9a999e; }
+#indexWrapper #gosections-intro {
+  position: relative;
+  width: 650px;
+  height: 23px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 12vh; }
+  #indexWrapper #gosections-intro ul {
+    width: 720px;
     margin: auto;
     left: 0;
     right: 0;
-    padding-left: 23px;
-    box-sizing: border-box; }
-    #indexWrapper .centeredText h1 {
-      color: #06111a;
-      font-size: 35pt;
-      margin: 0; }
-    #indexWrapper .centeredText p {
-      color: #9a999e;
-      font-size: 14pt;
-      line-height: 14.5pt;
-      margin: 0;
-      margin-top: 25px; }
-  #indexWrapper #top-intro {
-    margin-top: 14vh;
-    margin-bottom: 23vh;
-    border-left: 1px solid #9a999e; }
-  #indexWrapper #gosections-intro {
-    position: relative;
-    width: 650px;
-    height: 23px;
-    margin: auto;
-    left: 0;
-    right: 0;
-    margin-top: 12vh; }
-    #indexWrapper #gosections-intro ul {
-      width: 720px;
-      margin: auto;
-      left: 0;
-      right: 0;
-      padding: 0; }
-      #indexWrapper #gosections-intro ul li {
-        position: relative;
-        height: 100%;
-        text-align: center;
-        list-style-type: none;
-        display: inline-block;
-        vertical-align: top;
-        zoom: 1;
-        /* Fix for IE7 */
-        *display: inline;
-        /* Fix for IE7 */ }
-        #indexWrapper #gosections-intro ul li a {
-          text-decoration: none;
-          font-weight: 700;
-          font-size: 30px;
-          color: #9a999e;
-          -webkit-transition: all 0.4s ease-in-out;
-          -moz-transition: all 0.4s ease-in-out;
-          -ms-transition: all 0.4s ease-in-out;
-          -o-transition: all 0.4s ease-in-out;
-          transition: all 0.4s ease-in-out; }
-          #indexWrapper #gosections-intro ul li a:hover {
-            color: #06111a; }
-      #indexWrapper #gosections-intro ul .mid-link {
-        margin: 0 70px; }
+    padding: 0; }
+    #indexWrapper #gosections-intro ul li {
+      position: relative;
+      height: 100%;
+      text-align: center;
+      list-style-type: none;
+      display: inline-block;
+      vertical-align: top;
+      zoom: 1;
+      /* Fix for IE7 */
+      *display: inline;
+      /* Fix for IE7 */ }
+      #indexWrapper #gosections-intro ul li a {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 30px;
+        color: #9a999e;
+        -webkit-transition: all 0.4s ease-in-out;
+        -moz-transition: all 0.4s ease-in-out;
+        -ms-transition: all 0.4s ease-in-out;
+        -o-transition: all 0.4s ease-in-out;
+        transition: all 0.4s ease-in-out; }
+        #indexWrapper #gosections-intro ul li a:hover {
+          color: #06111a; }
+    #indexWrapper #gosections-intro ul .mid-link {
+      margin: 0 70px; }
 
 /*# sourceMappingURL=app.css.map */

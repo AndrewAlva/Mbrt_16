@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="es">
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -51,37 +51,10 @@
                 <?php
                     require("modules/left_nav.php");
                     require("modules/right_nav.php");
+                    require("home.php");
+                    // require("menu.php");
                 ?>
 
-                <div id="indexWrapper">
-                    <canvas id="freqCanvas"></canvas>
-
-
-                    <div id="top-intro" class="centeredText">
-                        <h1>Why Mandelbrot?</h1>
-                        <p>
-                            Because we believe in the strength of 'purpose' and it needs to be immersed in every aspect of a brand, from the smallest details to the biggest actions.
-                            <br><br>
-                            As we see them, brands are like fractals, they must have a consistent story in the whole structure, in every idea and every decision. That's the only way to bring the best experience and inspire true loyalty.
-                        </p>
-                    </div>
-
-
-                    <div id="bottom-intro" class="centeredText">
-                        <p>
-                            So we will be glad to start collaborating with you and we hope to hear news from you soon. Ok, with nothing left to say, let us introduce you our work. 
-                        </p>
-                    </div>
-
-
-                    <div id="gosections-intro">
-                        <ul>
-                            <li><a href="#">View Work</a></li>
-                            <li class="mid-link"><a href="#">View Services</a></li>
-                            <li><a href="#">Let's Talk</a></li>
-                        </ul>
-                    </div>
-                </div>
             </div>
         </div>
         
